@@ -1,0 +1,16 @@
+#AT new environment, 
+
+!pip3 install --upgrade pip
+!pip3 -V
+
+!pip3 install --upgrade tensorflow
+import tensorflow as tf
+
+print(tf.__version__)
+
+# If TF version is low, it should be upgraded  
+!pip install --upgrade tensorflow
+#Could not install packages due to an OSError: [WinError 5] 액세스가 거부되었습니다: 'c:\\users\\infomax\\anaconda3\\Lib\\site-packages\\tensorflow\\lite\\experimental\\microfrontend\\python\\ops\\_audio_microfrontend_op.so'
+#Consider using the `--user` option or check the permissions.
+
+#!pip3 install numpy, tensorflow, tf_quant_finance (한꺼번에 인스톨하는건 다시 확인)
