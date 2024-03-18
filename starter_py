@@ -1,0 +1,40 @@
+##Class 
+# Account has vr 'balance', deposit(), withdraw()
+
+class Account :
+    balance = 10000
+    def deposit(self, amount): 
+        self.balance += amount
+    def withdraw (self, amount): #self= 메소드에서 넣을 변수값
+        self.balance -= amount 
+
+
+### 대문자는 클래스 Account 를, 소문자는 함수를 불러옴.
+## 객체생성 (메모리 사용)
+acc1= Account()
+#Account() *2 또는 +/- 3000 생성 불가/
+acc2= Account()
+
+
+#객체.변수 로 호출하기
+acc1.balance ##100000
+
+
+#메소드 호출 : 코드를 맞춤실행
+acc1.deposit(2500)
+acc2.withdraw(3500)
+acc1.balance, acc2.balance
+
+
+#balance를 쓸때마다 바꾸려면?
+acc1.balance = 9500 #강제 변환
+
+
+#객체의 데이터 확인?
+dir(acc1)[-4],dir(acc1)[-3] 
+dir(acc1)[-3] 
+
+
+
+
+#SELF
