@@ -35,6 +35,29 @@ dir(acc1)[-4],dir(acc1)[-3]
 dir(acc1)[-3] 
 
 
+#<Special method : 앞뒤로 __ 가 붙은 메소드>
+객체 변수의 초기값 생성
+#SELF "__init()__ 사용법"
+class Account_nb :
+    def __init__ (self, balance): #초기값
+        self.balance = balance
+    def deposit(self, amount): 
+        self.balance += amount
+    def withdraw (self, amount): #self= 메소드에서 넣을 변수값
+        self.balance -= amount 
+
+accnb1=Account_nb(2000)
+accnb2=Account_nb(35000)
+accnb1.balance, accnb2.balance #2000,35000
+
+accnb2.withdraw(5000)
+accnb2.balance  #30000
 
 
-#SELF
+#dir
+
+
+
+
+
+
