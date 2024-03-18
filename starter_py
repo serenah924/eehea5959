@@ -1,4 +1,12 @@
 ##Class 
+- Class
+    
+    method: Class 내 함수
+    
+    Class 선언 (설계도) > 객체생성 (자원투자) > method 호출 (제품 실행) // 객체를 통해 메소드가 골라짐.
+    
+    **__init__**()
+
 # Account has vr 'balance', deposit(), withdraw()
 
 class Account :
